@@ -29,4 +29,3 @@ Route::middleware(['auth', LogVisitor::class])->group(function () {
     Route::get('/dosen/dashboard', [DashboardController::class, 'dosen'])->name('dashboard.dosen');
     Route::get('/mahasiswa/dashboard', [DashboardController::class, 'user'])->name('dashboard.user');
 });
-
