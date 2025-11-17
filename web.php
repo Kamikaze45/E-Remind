@@ -16,7 +16,11 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register'])->name('register.post');
 
+<<<<<<< HEAD
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+=======
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');A
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
 
 // Dashboard routes: hanya bisa diakses user login
 Route::middleware(['auth', LogVisitor::class])->group(function () {
@@ -29,3 +33,7 @@ Route::middleware(['auth', LogVisitor::class])->group(function () {
     Route::get('/dosen/dashboard', [DashboardController::class, 'dosen'])->name('dashboard.dosen');
     Route::get('/mahasiswa/dashboard', [DashboardController::class, 'user'])->name('dashboard.user');
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87

@@ -10,12 +10,20 @@
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
     <div class="bg-white shadow-lg rounded-xl flex overflow-hidden w-full max-w-4xl">
+<<<<<<< HEAD
+=======
+        <!-- Left: Sign Up Form -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
         <div class="w-full lg:w-1/2 p-8">
             <h2 class="text-2xl font-bold mb-4">Daftar Akun</h2>
 
             <form action="{{ route('register') }}" method="POST" class="space-y-5">
                 @csrf
 
+<<<<<<< HEAD
+=======
+                <!-- Name -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
                 <div>
                     <label class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
                     <input type="text" name="name" value="{{ old('name') }}" required
@@ -26,6 +34,10 @@
                     @enderror
                 </div>
 
+<<<<<<< HEAD
+=======
+                <!-- Email -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
                 <div>
                     <label class="block text-sm font-medium text-gray-700">Email</label>
                     <input type="email" name="email" value="{{ old('email') }}" required
@@ -36,6 +48,10 @@
                     @enderror
                 </div>
 
+<<<<<<< HEAD
+=======
+                <!-- Password -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Password</label>
@@ -54,9 +70,17 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Role</label>
 
+=======
+                <!-- Role selection: card toggle -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Role</label>
+
+                    <!-- actual radio inputs (visually hidden but accessible) -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
                     <div class="flex gap-4">
                        <label class="flex-1 cursor-pointer">
         <input type="radio" name="role" value="user"
@@ -115,6 +139,10 @@
                     @enderror
                 </div>
 
+<<<<<<< HEAD
+=======
+                <!-- Submit -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
                 <button type="submit"
                     class="w-full bg-blue-500 text-white font-bold py-2 rounded hover:bg-blue-600 transition">Daftar</button>
             </form>
@@ -123,6 +151,11 @@
                 Sudah punya akun? <a href="{{ route('login') }}" class="text-blue-600 hover:underline">Masuk</a>
             </p>
         </div>
+<<<<<<< HEAD
+=======
+
+        <!-- Right: Visual / Info -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
         <div
             class="hidden lg:flex w-1/2 bg-gradient-to-br from-blue-400 to-blue-500 text-white flex-col items-center justify-center p-8">
             <h2 class="text-2xl font-bold mb-3">Selamat Datang!</h2>
@@ -132,7 +165,13 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <script>
+=======
+    <!-- Small inline script to add selected class -->
+    <script>
+    // add selected styling to the checked radio
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
     function refreshRoleCards() {
         document.querySelectorAll('.role-card').forEach(card => {
             const radio = card.querySelector('input[type="radio"]');
@@ -146,6 +185,10 @@
     }
 
     document.addEventListener('click', (e) => {
+<<<<<<< HEAD
+=======
+        // if a role card clicked, toggle the radio
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
         const card = e.target.closest('.role-card');
         if (card) {
             const radio = card.querySelector('input[type="radio"]');
@@ -156,6 +199,10 @@
         }
     });
 
+<<<<<<< HEAD
+=======
+    // initial
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
     refreshRoleCards();
     </script>
 </body>

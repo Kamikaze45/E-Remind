@@ -10,6 +10,10 @@
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white shadow-lg rounded-xl flex overflow-hidden w-full max-w-4xl">
+<<<<<<< HEAD
+=======
+        <!-- Left: Login Form -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
         <div class="w-1/2 p-10">
             <h2 class="text-2xl font-bold mb-6 text-gray-700">Sign In</h2>
 
@@ -53,6 +57,11 @@
                 </button>
             </form>
         </div>
+<<<<<<< HEAD
+=======
+
+        <!-- Right: Sign Up Prompt -->
+>>>>>>> a6eceef515f7d6ce31e44bdde275550302ffdb87
         <div
             class="w-1/2 bg-gradient-to-br from-blue-400 to-blue-500 text-white flex flex-col items-center justify-center p-10">
             <h2 class="text-3xl font-bold mb-4">Halo, Teman!</h2>
